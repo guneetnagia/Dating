@@ -19,6 +19,11 @@ public class Interests {
 	
 	
 	
+	public Interests() {
+		super();
+	}
+	
+	
 	public long getInterestId() {
 		return interestId;
 	}
