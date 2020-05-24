@@ -1,8 +1,10 @@
 package test.apple.datingSite.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -13,6 +15,9 @@ public class Interests {
 	@GeneratedValue
 	private long interestId;
 	private String activity;
+	
+	
+	
 	
 	public long getInterestId() {
 		return interestId;
@@ -25,14 +30,6 @@ public class Interests {
 	}
 	public void setActivity(String activity) {
 		this.activity = activity;
-	}
-	public Interests(long interestId, String activity) {
-		super();
-		this.interestId = interestId;
-		this.activity = activity;
-	}
-	public Interests() {
-		super();
 	}
 	
 	

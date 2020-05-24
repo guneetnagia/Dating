@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -16,16 +17,18 @@ public class Users {
 	
 	@Id
 	@GeneratedValue
-	@Column(name="user_id")
+	@Column(name="profile_id")
 	private Long userId;
-	@Column(name="user_name")
+	@Column(name="profile_name")
 	private String name;
-	@Column(name="user_age")
+	@Column(name="profile_age")
 	private int age;
+	
 	@OneToMany(
 		cascade = CascadeType.ALL,
 		orphanRemoval = true
 		)
+	@JoinColumn(name = "user_id")
 	private List<Interests> interests;
 	public Long getUserId() {
 		return userId;
