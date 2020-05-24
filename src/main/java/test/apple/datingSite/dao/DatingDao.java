@@ -44,7 +44,7 @@ public class DatingDao {
 						score++;
 					}
 				}
-				p.setScore(score +  p.getScore());
+				p.setScore(score +  5-Math.abs(client.getAge()-p.getAge()));
 			}
 			
 		}
