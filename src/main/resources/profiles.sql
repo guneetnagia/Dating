@@ -45,3 +45,19 @@ insert into user_interests (profile_id,activity) values
 (3, 'Football');
 insert into user_interests (profile_id,activity) values
 (3, 'Cricket');
+
+insert into user_interests (profile_id,activity) values
+(4, 'Tennis');
+insert into user_interests (profile_id,activity) values
+(4, 'Football');
+insert into user_interests (profile_id,activity) values
+(4, 'Badminton');
+
+insert into user_interests (profile_id,activity) values
+(5, 'Cricket');
+insert into user_interests (profile_id,activity) values
+(5, 'Football');
+insert into user_interests (profile_id,activity) values
+(5, 'Movies');
+insert into user_interests (profile_id,activity) values
+(5, 'Badminton');
